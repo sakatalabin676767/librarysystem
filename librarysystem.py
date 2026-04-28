@@ -7,7 +7,11 @@ except FileExistsError:
     print("File already exists!")
 
 def addbook(): # student B
-    pass # kamo na edit ani (remove ang pass)
+    print("---Add Book---")
+    title = input("Enter book title: ")
+    with open("library.txt", "a") as f:
+        f.write(title + "\n")
+    print("Book added successfully!")
 
 def showbooks(): # student C
     pass # kani sad (remove ang pass)
