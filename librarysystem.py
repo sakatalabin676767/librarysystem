@@ -14,7 +14,9 @@ def addbook(): # student B
     print("Book added successfully!")
 
 def showbooks(): # student C
-    pass # kani sad (remove ang pass)
+    with open("library.txt", "r") as f:
+        books = f.read()
+        print(books)
         
 while True:
     print("1. Add Book") # student B
